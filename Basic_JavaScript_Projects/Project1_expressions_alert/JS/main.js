@@ -1,2 +1,3 @@
 window.alert("window alert");
-document.write("document write");
+let A = "Document Write";
+document.write(A);
