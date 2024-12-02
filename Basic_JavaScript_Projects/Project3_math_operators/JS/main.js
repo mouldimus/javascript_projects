@@ -1,4 +1,11 @@
-function myFunction() {
-  document.getElementById("Math").innerHTML = 5 + 5;
-  return 5 + 5;
+function addition() {
+  let sum = 5 + 5;
+  document.getElementById("Math").innerHTML = sum;
+  return sum;
+}
+
+function subtraction() {
+  let difference = 5 - 5;
+  document.getElementById("Math").innerHTML = difference;
+  return difference;
 }
