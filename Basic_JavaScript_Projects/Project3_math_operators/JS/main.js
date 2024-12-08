@@ -21,3 +21,17 @@ function division() {
   document.getElementById("Math").innerHTML = quotient;
   return quotient;
 }
+
+document.addEventListener("click", calc);
+
+function calc() {
+  calculation = 5 / 100 + 5 * 25 - 8;
+  console.log("Calculation: " + calculation);
+
+  let mathElement = document.getElementById("Math");
+  mathElement.appendChild(
+    document.createTextNode("Calculation: " + calculation),
+  );
+
+  return calculation;
+}
