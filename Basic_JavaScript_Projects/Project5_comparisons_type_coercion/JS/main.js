@@ -10,3 +10,4 @@ document.writeln("infinity: ", inf, typeof inf);
 document.writeln("negative infinity: ", negInf, typeof negInf);
 document.writeln("5 < 3: ", 5 < 3);
 console.log("5 < 3: ", 5 < 3);
+console.log("s == n: ", s == n);
