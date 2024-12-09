@@ -23,3 +23,10 @@ function myFunction() {
     " manufactured in " +
     erik.year;
 }
+
+function parentFunction() {
+  function childFunction() {
+    document.getElementById("nestedFunction").innerHTML = "Hello World";
+  }
+  childFunction();
+}
