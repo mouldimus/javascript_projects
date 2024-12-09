@@ -10,9 +10,36 @@
 
 <body>
 
-	<p id="Math" onclick="addition()" ondblclick="subtraction()" ondrop="multiplication()" onmouseout="division()">
-		Click or dblclick</p>
-
+	<p>Click the button to display the answer.</p>
+	<!--NOTE: onclick is the event handler that will call the function.-->
+	<!--span.id is the reference for displaying the results.-->
+	<div>
+		<button onclick="addition()">5 + 5 = </button><span id="addition"></span>
+	</div>
+	<div>
+		<button onclick="subtraction()">5 - 5 = </button><span id="subtraction"></span>
+	</div>
+	<div>
+		<button onclick="multiplication()">5 * 5 = </button><span id="multiplication"></span>
+	</div>
+	<div>
+		<button onclick="division()">5 / 5 = </button><span id="division"></span>
+	</div>
+	<div>
+		<button onclick="modulus()">9 % 5 = </button><span id="modulus"></span>
+	</div>
+	<div>
+		<button onclick="unary()">-10 = </button><span id="unary"></span>
+	</div>
+	<div>
+		<button onclick="increment()">10++ = </button><span id="increment"></span>
+	</div>
+	<div>
+		<button onclick="decrement()">10-- = </button><span id="decrement"></span>
+	</div>
+	<div>
+		<button onclick="random()">Random number between 0 and 100 = </button><span id="random"></span>
+	</div>
 </body>
 
 </html>
