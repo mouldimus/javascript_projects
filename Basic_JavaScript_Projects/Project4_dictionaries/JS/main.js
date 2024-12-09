@@ -1,3 +1,6 @@
+// create a dictionary
+// delete a property
+// print the property
 function dictionary() {
   const car = {
     color: "blue",
