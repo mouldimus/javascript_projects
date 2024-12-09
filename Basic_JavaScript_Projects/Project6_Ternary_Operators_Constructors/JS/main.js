@@ -1,3 +1,4 @@
+// ternary
 function rideFunction() {
   let height, canRide;
   height = document.getElementById("height").value;
@@ -5,6 +6,7 @@ function rideFunction() {
   document.getElementById("ride").innerHTML = canRide + " to ride.";
 }
 
+// constructor
 function Vehicle(make, model, year, color) {
   this.make = make;
   this.model = model;
@@ -14,6 +16,8 @@ function Vehicle(make, model, year, color) {
 let jack = new Vehicle("Dodge", "Viper", 2020, "red");
 let emily = new Vehicle("Jeep", "Trail Hawk", 2019, "blue");
 let erik = new Vehicle("Ford", "Pinto", 1971, "black");
+
+// display results
 function myFunction() {
   document.getElementById("keywordsAndConstructors").innerHTML =
     "Erik drives a " +
@@ -24,6 +28,7 @@ function myFunction() {
     erik.year;
 }
 
+// nested
 function parentFunction() {
   function childFunction() {
     document.getElementById("nestedFunction").innerHTML = "Hello World";
