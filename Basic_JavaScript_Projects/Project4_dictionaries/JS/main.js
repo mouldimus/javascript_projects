@@ -23,5 +23,6 @@ function dictionary() {
       console.log("accelerating");
     },
   };
+  delete car.color;
   document.getElementById("Dictionary").innerHTML = car.color;
 }
