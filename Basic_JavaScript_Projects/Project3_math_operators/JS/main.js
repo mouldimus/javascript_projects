@@ -51,3 +51,13 @@ function unary() {
   let x = 10;
   document.getElementById("Math").innerHTML = -x;
 }
+
+function increment() {
+  let x = 10;
+  document.getElementById("Math").innerHTML = x++;
+}
+
+function decrement() {
+  let x = 10;
+  document.getElementById("Math").innerHTML = x--;
+}
