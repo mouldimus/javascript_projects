@@ -61,3 +61,8 @@ function decrement() {
   let x = 10;
   document.getElementById("Math").innerHTML = x--;
 }
+
+function random() {
+  let x = Math.random() * 100;
+  document.getElementById("Math").innerHTML = x;
+}
