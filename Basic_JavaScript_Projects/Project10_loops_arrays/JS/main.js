@@ -1,3 +1,4 @@
+// Create a while loop
 function callLoop() {
   let i = 0;
   while (i < 10) {
@@ -6,6 +7,7 @@ function callLoop() {
   }
 }
 
+// Create a for loop
 function forLoop() {
   let listOfInstruments = ["guitar", "bass", "drums", "keyboards"];
   for (let i = 0; i < listOfInstruments.length; i++) {
@@ -14,11 +16,13 @@ function forLoop() {
   }
 }
 
+// Create an array
 function arrayFunction() {
   let arr = [10, 20, 30, 40, 50];
   document.getElementById("array").innerHTML = arr;
 }
 
+// Create a constant
 function constFunction() {
   const car = {
     type: "Fiat",
@@ -37,6 +41,7 @@ function constFunction() {
     car.year;
 }
 
+// Create an object and add a method
 function objectFunction() {
   let person = {
     firstName: "John",
