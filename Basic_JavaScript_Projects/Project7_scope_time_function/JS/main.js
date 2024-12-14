@@ -20,6 +20,7 @@ function changeName() {
     output = "Good morning " + input + "!";
   } else if (hours < 18) {
     output = "Good afternoon " + input + "!";
+    // else statement
   } else {
     output = "Good evening " + input + "!";
   }
