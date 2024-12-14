@@ -1,6 +1,8 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+const display = document.getElementById("timer");
+
 function countdown() {
   let seconds = document.getElementById("seconds").value;
   seconds = Number(seconds);
@@ -9,7 +11,10 @@ function countdown() {
     document.getElementById("seconds").value = "";
     return;
   }
-  let intervalId = setInterval(() => plusSlides(1), seconds * 1000);
+  let intervalId = setInterval(() => {
+    startTimer(seconds, display);
+    plusSlides(1);
+  }, seconds * 1000);
   let slides = document.getElementsByClassName("myslides");
   setTimeout(
     () => {
@@ -17,6 +22,26 @@ function countdown() {
     },
     seconds * slides.length * 1000,
   );
+}
+
+async function startTimer(duration, display) {
+  let timer = duration,
+    minutes,
+    seconds;
+  const interval = setInterval(() => {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      clearInterval(interval);
+      display.textContent = "";
+    }
+  }, 1000);
 }
 
 // Next/previous controls
