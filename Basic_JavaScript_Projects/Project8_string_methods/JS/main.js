@@ -1,7 +1,7 @@
 function concat() {
-  var x = "Hello ";
-  var y = "World!";
-  var z = x.concat(y);
+  let x = "Hello ";
+  let y = "World!";
+  let z = x.concat(y);
   document.getElementById("concat").innerHTML = z;
 }
 function slice() {
