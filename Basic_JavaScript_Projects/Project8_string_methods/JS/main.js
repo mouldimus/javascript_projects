@@ -9,3 +9,8 @@ function slice() {
   let shortString = longString.slice(0, 10);
   document.getElementById("sliceOutput").innerHTML = shortString;
 }
+function stringMethod() {
+  let x = 182;
+  let y = x.toString();
+  document.getElementById("numbersToString").innerHTML = y;
+}
