@@ -23,8 +23,16 @@ function constFunction() {
   const car = {
     type: "Fiat",
     model: "500",
-    color: "white",
+    color: "red",
+    year: 2010,
   };
   document.getElementById("constant").innerHTML =
-    "The car is a " + car.color + " " + car.type + " " + car.model;
+    "The car is a " +
+    car.color +
+    " " +
+    car.type +
+    " " +
+    car.model +
+    " from " +
+    car.year;
 }
