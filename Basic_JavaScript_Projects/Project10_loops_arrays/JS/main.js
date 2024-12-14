@@ -36,3 +36,15 @@ function constFunction() {
     " from " +
     car.year;
 }
+
+function objectFunction() {
+  let person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  };
+  document.getElementById("object").innerHTML = person.fullName();
+}
