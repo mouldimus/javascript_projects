@@ -15,6 +15,7 @@ function changeName() {
   let input = document.getElementById("input").value;
   let hours = new Date().getHours();
   let output;
+  // If statement
   if (hours < 12) {
     output = "Good morning " + input + "!";
   } else if (hours < 18) {
