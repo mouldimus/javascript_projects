@@ -18,6 +18,7 @@ function changeName() {
   // If statement
   if (hours < 12) {
     output = "Good morning " + input + "!";
+    // else if statement
   } else if (hours < 18) {
     output = "Good afternoon " + input + "!";
     // else statement
