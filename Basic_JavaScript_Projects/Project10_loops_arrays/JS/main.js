@@ -13,3 +13,8 @@ function forLoop() {
       listOfInstruments[i] + "<br />";
   }
 }
+
+function arrayFunction() {
+  let arr = [10, 20, 30, 40, 50];
+  document.getElementById("array").innerHTML = arr;
+}
