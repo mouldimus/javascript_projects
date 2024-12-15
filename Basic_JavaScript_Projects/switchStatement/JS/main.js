@@ -27,4 +27,6 @@ function colorFunction() {
   }
 
   document.getElementById("output").innerHTML = output;
+
+  document.getElementsByClassName("output")[0].style.backgroundColor = color;
 }
