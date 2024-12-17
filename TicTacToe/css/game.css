@@ -19,7 +19,7 @@ td {
 	/*This property changes the cursor to the index finger icon when we hover over td elements.*/
 	cursor: pointer;
 	/*This property sets the border and style width of td elements.*/
-	border: 4px solid rgba(252, 169, 3, 0.8);
+	border: 4px solid rgba(100, 100, 100, 0.8);
 	/*This property removes the default padding.*/
 	padding: 0px;
 	width: 200px;
@@ -34,4 +34,9 @@ canvas {
 	z-index: 10;
 	/*This property makes our canvas invisible.*/
 	pointer-events: none;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
 }
