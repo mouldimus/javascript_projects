@@ -222,3 +222,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     resetGame();
   }, 1000);
 }
+
+// This function resets the game in the event of a tie or a win.
+function resetGame() {
+  for (let i = 0; i < 9; i++) {
+    let square = document.getElementById(String(i));
+    square.style.backgroundImage = "";
+  }
+  selectedSquares = [];
+}
