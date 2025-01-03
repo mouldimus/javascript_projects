@@ -10,6 +10,36 @@
 </head>
 
 <body>
+	<div id="menuBG">
+		<h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+		<input type="button" id="btnOrder" value="Place Order" onclick="getReceipt()">
+		<form action="" id="frmMenu">
+			<div class="menu left">
+				<h3>Size:</h3>
+				<input type="radio" class="size" name="Size" value="Personal Pizza">Personal Pizza<br>
+				<input type="radio" class="size" name="Size" value="Medium Pizza">Medium Pizza<br>
+				<input type="radio" class="size" name="Size" value="Large Pizza">Large Pizza<br>
+				<input type="radio" class="size" name="Size" value="Extra Large Pizza">Extra Large
+				Pizza<br>
+			</div>
+
+			<div class="menu right">
+				<h3>Meats:</h3>
+				<input type="checkbox" class="toppings" name="Topping" value="Pepperoni">Pepperoni<br>
+				<input type="checkbox" class="toppings" name="Topping" value="Sausage">Sausage<br>
+				<input type="checkbox" class="toppings" name="Topping" value="Canadian Bacon">Canadian
+				Bacon<br>
+				<input type="checkbox" class="toppings" name="Topping" value="Ground Beef">Ground
+				Beef<br>
+				<input type="checkbox" class="toppings" name="Topping" value="Anchovy">Anchovy<br>
+				<input type="checkbox" class="toppings" name="Topping" value="Chicken">Chicken<br>
+			</div>
+			<div id="cart">
+				<div id="showText"></div>
+				<div id="totalPrice"></div>
+			</div>
+		</form>
+	</div>
 
 
 </body>
