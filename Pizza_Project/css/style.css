@@ -1,49 +1,119 @@
+:root {
+	--color-background: #1a1a2e;
+	/* Deep midnight blue */
+	--color-primary: #16213e;
+	/* Dark navy */
+	--color-secondary: #0f3460;
+	/* Midnight indigo */
+	--color-accent: #e94560;
+	/* Neon red-pink */
+	--color-highlight: #53354a;
+	/* Soft plum highlight */
+	--color-text-primary: #ffffff;
+	/* White for text */
+	--color-text-secondary: #a5a5a5;
+	/* Soft gray for secondary text */
+	--color-border: #3c3c54;
+	/* Subtle border color */
+	--color-hover: #1b9aaa;
+	/* Vibrant teal for hover effects */
+	--color-shadow: rgba(0, 0, 0, 0.5);
+	/* Shadow effect */
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text-primary);
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
 #menuBG {
-	width: 400px;
-	height: 470px;
+	background-color: var(--color-primary);
+	box-shadow: 0 4px 8px var(--color-shadow);
+	border-radius: 8px;
+	width: 90%;
+	max-width: 600px;
+	padding: 20px;
 	margin: 10px auto;
+	display: grid;
+	gap: 20px;
+	grid-template-rows: auto auto 1fr;
+	grid-template-columns: 1fr;
 }
 
-#frmMenu {
-	width: 400px;
-	height: 200px;
-}
-
-#totalPrice {
-	width: 200px;
-	height: 190px;
-	margin: 0 auto;
-	float: right;
-}
-
-.left {
-	width: 200px;
-	height: 200px;
-	float: left;
-}
-
-.right {
-	width: 200px;
-	height: 200px;
-	float: right;
-}
-
-#showText {
-	width: 200px;
-	height: 190px;
-	margin: 0 auto;
-	float: left;
-}
-
-#cart {
-	top: 0;
-	margin: 0px auto;
-	width: 400px;
-	height: 200px;
+h1 {
+	color: var(--color-accent);
+	margin: 0;
+	text-align: center;
 }
 
 #btnOrder {
-	margin: 10px 0px 0px 100px;
-	width: 100px;
-	height: 40px;
+	background-color: var(--color-accent);
+	color: var(--color-text-primary);
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px var(--color-shadow);
+	width: 100%;
+	max-width: 150px;
+	justify-self: center;
+}
+
+#btnOrder:hover {
+	background-color: var(--color-hover);
+}
+
+#frmMenu {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu {
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.menu.left {
+	background-color: var(--color-secondary);
+}
+
+.menu.right {
+	background-color: var(--color-highlight);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+#cart {
+	background-color: var(--color-primary);
+	color: var(--color-text-secondary);
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid var(--color-border);
+	box-shadow: 0 2px 4px var(--color-shadow);
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-column: span 2;
+}
+
+#showText,
+#totalPrice {
+	text-align: center;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+	outline: 2px solid var(--color-hover);
 }
