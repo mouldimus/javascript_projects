@@ -39,10 +39,11 @@ function getTopping(runningTotal, text1) {
     }
   }
   var toppingCount = selectedTopping.length;
+  console.log("toppingCount: " + toppingCount);
   if (toppingCount > 1) {
-    toppingCount = toppingCount - 1;
+    toppingTotal = toppingCount - 1;
   } else {
-    toppingCount = 0;
+    toppingTotal = 0;
   }
   runningTotal = runningTotal + toppingTotal;
   console.log("total selected topping items: " + toppingCount);
